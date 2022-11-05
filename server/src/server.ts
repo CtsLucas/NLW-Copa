@@ -19,7 +19,7 @@ async function bootstrap() {
 
   await fastify.register(jwt, {
     secret: 'nlwcopa',
-  })
+  });
 
   await fastify.register(poolRoutes);
   await fastify.register(auhtRoutes);
